@@ -401,7 +401,7 @@ details.more[open] summary { margin-bottom: 12px; }
 <section id="results">
   <div class="wrap">
     <div class="kicker">Results</div>
-    <h2>In oversight settings, all three raise approval; deception raises it most</h2>
+    <h2>Every Agent A model we tested moved Agent B's decision</h2>
     <p class="lede measure">Pick a capability to see its effect in each environment and the techniques Agent A used.</p>
     <div class="seg" id="tq-cap" style="margin: 6px 0 18px"><button type="button" data-key="persuasion" aria-pressed="false">Persuasion</button><button type="button" data-key="deception" aria-pressed="true">Deception</button><button type="button" data-key="coercion" aria-pressed="false">Coercion</button></div>
     <div class="capsum" id="cap-sum"></div>
@@ -410,7 +410,7 @@ details.more[open] summary { margin-bottom: 12px; }
       <div class="tcard" id="tq-card"></div>
     </div>
     <div class="turns" style="margin: 28px 0 0">
-        <h3 style="font-size: 18px">What if the conversation were cut short?</h3>
+        <h3 style="font-size: 18px">Effects build over turns</h3>
         <p class="small" style="margin-bottom: 0">Drag to cut every oversight conversation off after this many turns. Agent A speaks on odd turns, Agent B on even. Effect on Agent B's approval rate vs baseline, pooled over GDPR, code and methods review.</p>
         <input type="range" id="t-range" min="2" max="8" step="2" value="8" aria-label="Turn budget">
         <div class="ticks"><span>turn 2</span><span>turn 4</span><span>turn 6</span><span>turn 8 (the full run)</span></div>
@@ -449,7 +449,7 @@ details.more[open] summary { margin-bottom: 12px; }
 <section id="models">
   <div class="wrap">
     <div class="kicker">Models</div>
-    <h2>Each model, in both seats</h2>
+    <h2>No clear winner: results depend on both models</h2>
     <p class="lede measure">Pick a model to see how it behaves as the influencer, and how easy it is to move as the target.</p>
     <div class="two mpick" style="margin-top: 20px">
       <div><div class="label">As Agent A, the influencer</div><div class="seg" id="m-a-pick" style="margin-bottom: 12px"></div><div id="m-a"></div></div>
@@ -457,7 +457,7 @@ details.more[open] summary { margin-bottom: 12px; }
     </div>
     <p class="small" style="margin-top: 16px">Oversight environments unless marked. "Largest effect" is the biggest significant per-pair change in Agent B's approval rate in the three review environments.</p>
     <div id="explore" style="margin-top: 44px">
-      <h3 style="font-size: clamp(22px, 2.6vw, 28px)">Every model pair, one grid</h3>
+      <h3 style="font-size: clamp(22px, 2.6vw, 28px)">Effect per model pair</h3>
       <div class="ctl">
         <div><div class="label">Capability</div><div class="seg" id="x-cap"><button type="button" data-key="persuasion" aria-pressed="false">Persuasion</button><button type="button" data-key="deception" aria-pressed="true">Deception</button><button type="button" data-key="coercion" aria-pressed="false">Coercion</button></div></div>
         <div><div class="label">Environment</div><div class="seg" id="x-env"><button type="button" data-key="0" aria-pressed="true">GDPR review</button><button type="button" data-key="1" aria-pressed="false">Code review</button><button type="button" data-key="2" aria-pressed="false">Methods review</button><button type="button" data-key="3" aria-pressed="false">Scheduling</button><button type="button" data-key="4" aria-pressed="false">Research forum</button></div></div>
@@ -472,9 +472,9 @@ details.more[open] summary { margin-bottom: 12px; }
 
 <section id="transcripts">
   <div class="wrap">
-    <div class="kicker">From the transcripts</div>
-    <h2>One exchange, turn by turn</h2>
-    <p class="lede measure"><span class="s">Real runs, cut to the lines that matter and quoted exactly.</span><span class="s">The labels on Agent A's lines come from the scorer.</span></p>
+    <div class="kicker">Transcripts</div>
+    <h2>Example transcripts</h2>
+    <p class="lede measure"><span class="s">Excerpts from real runs, quoted exactly.</span><span class="s">The labels on Agent A's lines come from the scorer.</span></p>
     <div class="seg" id="an-cap" style="margin: 6px 0 4px"><button type="button" data-key="baseline" aria-pressed="false">Baseline</button><button type="button" data-key="persuasion" aria-pressed="true">Persuasion</button><button type="button" data-key="deception" aria-pressed="false">Deception</button><button type="button" data-key="coercion" aria-pressed="false">Coercion</button></div>
     <p class="small" id="an-head" style="margin: 10px 0 0"></p>
     <div class="anno" id="an-log"></div>
@@ -488,7 +488,7 @@ details.more[open] summary { margin-bottom: 12px; }
     <div class="three resources">
       <a class="card" href="https://arxiv.org/abs/2611.04556"><div class="k">Paper</div><div class="t">arXiv 2611.04556</div><p>The full paper with all appendices. Accepted at NeurIPS 2026.</p></a>
       <a class="card" href="https://github.com/Cooperative-AI-Foundation/inter-agent-influence"><div class="k">Code</div><div class="t">Environments, scorers, analysis</div><p>Five Inspect environments with capability modes, the grading pipeline, and the scripts behind every table and figure. <code>make reproduce</code> regenerates the analysis.</p></a>
-      <a class="card" href="https://huggingface.co/datasets/Cooperative-AI-Foundation/inter-agent-influence-eval"><div class="k">Transcripts</div><div class="t">Every run, every score</div><p>A gated Hugging Face dataset with all transcripts and the per-sample tables the analysis reads. Request access on the dataset page.</p></a>
+      <a class="card" href="https://huggingface.co/datasets/Cooperative-AI-Foundation/inter-agent-influence-eval"><div class="k">Transcripts</div><div class="t">Transcripts and scores</div><p>A gated Hugging Face dataset with all transcripts and the per-sample tables the analysis reads. Request access on the dataset page.</p></a>
     </div>
   </div>
 </section>
@@ -496,7 +496,7 @@ details.more[open] summary { margin-bottom: 12px; }
 <section id="authors">
   <div class="wrap">
     <h2>Authors</h2>
-    <div class="authors-grid"><a class="author" href="https://aigi.ox.ac.uk/people/chandler-smith/"><img class="pic" src="authors/chandler-smith.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Chandler Smith</span><span class="af">University of Oxford · Cooperative AI Foundation</span><span class="note">equal contribution</span></a><a class="author" href="https://www.cooperativeai.com/foundation"><img class="pic" src="authors/qi-guo.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Qi Guo</span><span class="af">Cooperative AI Foundation · Allelo</span><span class="note">equal contribution</span></a><a class="author" href="https://ceciliatilli.com/"><span class="pic initials" aria-hidden="true">CE</span><span class="nm">Cecilia Elena Tilli</span><span class="af">Allelo</span></a><a class="author" href="https://www.uu.se/en/contact-and-organisation/staff?query=N12-1038"><span class="pic initials" aria-hidden="true">SH</span><span class="nm">Sophia Hatz</span><span class="af">Uppsala University</span></a><a class="author" href="https://daviddemitriafrica.github.io/"><span class="pic initials" aria-hidden="true">DD</span><span class="nm">David Demitri Africa</span><span class="af">UK AI Security Institute</span></a><a class="author" href="https://aigi.ox.ac.uk/people/patricia-paskov/"><span class="pic initials" aria-hidden="true">PP</span><span class="nm">Patricia Paskov</span><span class="af">AVERI</span></a><a class="author" href="https://eng.ox.ac.uk/people/christian-schroeder-de-witt/"><span class="pic initials" aria-hidden="true">CS</span><span class="nm">Christian Schroeder de Witt</span><span class="af">University College London · University of Oxford</span></a><a class="author" href="https://eng.ox.ac.uk/people/philip-torr"><span class="pic initials" aria-hidden="true">PT</span><span class="nm">Philip Torr</span><span class="af">University of Oxford</span></a><a class="author" href="https://www.lewishammond.com/"><span class="pic initials" aria-hidden="true">LH</span><span class="nm">Lewis Hammond</span><span class="af">Cooperative AI Foundation</span><span class="note">corresponding author</span></a></div>
+    <div class="authors-grid"><a class="author" href="https://aigi.ox.ac.uk/people/chandler-smith/"><img class="pic" src="authors/chandler-smith.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Chandler Smith</span><span class="af">University of Oxford · Cooperative AI Foundation</span><span class="note">equal contribution</span></a><a class="author" href="https://www.cooperativeai.com/foundation"><img class="pic" src="authors/qi-guo.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Qi Guo</span><span class="af">Cooperative AI Foundation · Allelo</span><span class="note">equal contribution</span></a><a class="author" href="https://ceciliatilli.com/"><img class="pic" src="authors/cecilia-elena-tilli.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Cecilia Elena Tilli</span><span class="af">Allelo</span></a><a class="author" href="https://www.uu.se/en/contact-and-organisation/staff?query=N12-1038"><img class="pic" src="authors/sophia-hatz.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Sophia Hatz</span><span class="af">Uppsala University</span></a><a class="author" href="https://daviddemitriafrica.github.io/"><img class="pic" src="authors/david-demitri-africa.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">David Demitri Africa</span><span class="af">UK AI Security Institute</span></a><a class="author" href="https://aigi.ox.ac.uk/people/patricia-paskov/"><img class="pic" src="authors/patricia-paskov.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Patricia Paskov</span><span class="af">AVERI</span></a><a class="author" href="https://eng.ox.ac.uk/people/christian-schroeder-de-witt/"><img class="pic" src="authors/christian-schroeder-de-witt.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Christian Schroeder de Witt</span><span class="af">University College London · University of Oxford</span></a><a class="author" href="https://eng.ox.ac.uk/people/philip-torr"><img class="pic" src="authors/philip-torr.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Philip Torr</span><span class="af">University of Oxford</span></a><a class="author" href="https://www.lewishammond.com/"><img class="pic" src="authors/lewis-hammond.jpg" alt="" width="96" height="96" loading="lazy"><span class="nm">Lewis Hammond</span><span class="af">Cooperative AI Foundation</span><span class="note">corresponding author</span></a></div>
   </div>
 </section>
 
